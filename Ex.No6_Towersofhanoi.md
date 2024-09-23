@@ -14,11 +14,23 @@ To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG.
 8. Run the program  to find answer of  query.
 
 ### Program:
-
-
+```py
+move(1,X,Y,_) :-  
+    write('Move top disk from '), 
+    write(X), 
+    write(' to '), 
+    write(Y), 
+    nl. 
+move(N,X,Y,Z) :- 
+    N>1, 
+    M is N-1, 
+    move(M,X,Z,Y), 
+    move(1,X,Y,_), 
+    move(M,Z,Y,X).
+```
 
 ### Output:
-
+![Screenshot 2024-09-23 214606](https://github.com/user-attachments/assets/d68d84f2-9f68-419b-8814-7416a8985b75)
 
 
 ### Result:

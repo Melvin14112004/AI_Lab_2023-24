@@ -12,7 +12,6 @@ Step 5:   Define a problem for Monkey Banana problem.<br>
 Step 6:  Obtain the plan for given problem.<br> 
 Step 7: Stop the program.<br> 
 ### Program:
-
 ```
 (define (domain monkey)	       
   (:requirements :strips)
@@ -64,7 +63,6 @@ Step 7: Stop the program.<br>
 	     :effect (haswater)))
 
 ```
-
 ### Input 
 ```
 Problem :
@@ -85,9 +83,6 @@ Problem :
 )
 ```
 ### Output/Plan:
-
 ![image](https://github.com/user-attachments/assets/b61b402d-d725-4b9a-8023-a4304ca5e0cd)
-
-
 ### Result:
 Thus the plan was found for the initial and goal state of given problem.

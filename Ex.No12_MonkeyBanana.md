@@ -19,9 +19,6 @@ Step 7: Stop the program.<br>
    (:predicates (location ?x)
 	       (on-floor)
 	       (at ?m ?x)
-	       (hasknife)
-	       (onbox ?x)
-	       (hasbananas)
 	       (hasglass)
 	       (haswater))
    ;; movement and climbing

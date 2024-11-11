@@ -1,4 +1,4 @@
-# Ex.No: 10 Implementation of Monkey Banana Problem
+# Ex.No: 12 Implementation of Monkey Banana Problem
 ### DATE: 10.10.24                                                                            
 ### REGISTER NUMBER : 212222040098
 ### AIM: 

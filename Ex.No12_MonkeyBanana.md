@@ -1,5 +1,5 @@
-# Ex.No: 11 Implementation of Block World Problem 
-### DATE: 3.10.24                                                                            
+# Ex.No: 10 Implementation of Monkey Banana Problem
+### DATE: 10.10.24                                                                            
 ### REGISTER NUMBER : 212222040098
 ### AIM: 
 To find the sequence of plan for Monkey Banana problem using PDDL Editor.

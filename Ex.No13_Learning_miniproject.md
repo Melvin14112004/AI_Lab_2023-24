@@ -25,97 +25,70 @@ df.head()
 df.describe()
 df.info()
 
-# Import additional libraries for visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
 %matplotlib inline
-
-# Check for missing values in each column
 df.isnull().sum()
-
-# View value counts for 'fixed acidity'
 df["fixed acidity"].value_counts()
 
-# Fill missing values in 'fixed acidity' column with its mean
 mean = df["fixed acidity"].mean()
 df["fixed acidity"].fillna(mean, inplace=True)
 df["fixed acidity"].isnull().sum()
-
-# Fill missing values in 'volatile acidity' column with its mean
 mean2 = df["volatile acidity"].mean()
 df["volatile acidity"].fillna(mean, inplace=True)
 df["volatile acidity"].isnull().sum()
 
-# View value counts for 'citric acid'
 df["citric acid"].value_counts()
 
-# Fill missing values in 'citric acid' column with its mean
 mean3 = df["citric acid"].mean()
 df["citric acid"].fillna(mean, inplace=True)
 df["citric acid"].isnull().sum()
 
-# View value counts for 'residual sugar'
 df["residual sugar"].value_counts()
 
-# Fill missing values in 'residual sugar' column with its mean
 mean4 = df["residual sugar"].mean()
 df["residual sugar"].fillna(mean, inplace=True)
 df["residual sugar"].isnull().sum()
 
-# Fill missing values in 'chlorides' column with its mean
 mean5 = df["chlorides"].mean()
 df["chlorides"].fillna(mean, inplace=True)
 df["chlorides"].isnull().sum()
 
-# Fill missing values in 'pH' column with its mean
 mean6 = df["pH"].mean()
 df["pH"].fillna(mean, inplace=True)
 df["pH"].isnull().sum()
 
-# Fill missing values in 'sulphates' column with its mean
 mean7 = df["sulphates"].mean()
 df["sulphates"].fillna(mean, inplace=True)
 df["sulphates"].isnull().sum()
 
-# Check if there are any remaining missing values
 df.isnull().sum()
-
-# View value counts for 'type' column
 df["type"].value_counts()
 
-# Plot distribution of wine types
 sns.countplot(x="type", data=df)
 plt.show()
 
-# Plot histogram for the 'quality' column
 sns.countplot(x="quality", data=df)
 plt.show()
 
-# Show correlation heatmap
 plt.figure(figsize=(10, 8))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
 plt.show()
 
-# Distribution plots for alcohol, chlorides, and density
 sns.histplot(df["alcohol"], kde=True)
 plt.show()
-
 sns.histplot(df["chlorides"], kde=True)
 plt.show()
-
 sns.histplot(df["density"], kde=True)
 plt.show()
-
-# Scatter plot between alcohol and quality
 sns.scatterplot(x="alcohol", y="quality", data=df)
 plt.show()
-
-# Scatter plot between volatile acidity and quality
 sns.scatterplot(x="volatile acidity", y="quality", data=df)
 plt.show()
 
 ```
 ### Output:
-![alt text](<Screenshot 2024-08-12 224950.png>)
+![image](https://github.com/user-attachments/assets/cd02bb52-c9c1-4896-9e44-7cf7bb848993)
+
 ### Result:
 The model successfully predicted wine quality with reasonable accuracy, identifying key features like alcohol content and acidity as influential factors.
